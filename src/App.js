@@ -8,6 +8,7 @@ import Course from "./components/Course";
 import Curriculum from "./components/Curriculum";
 import Why from "./components/Why";
 import Benefits from "./components/Benefit";
+import Navbar from "./components/Navbar.js";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -22,6 +23,7 @@ function App() {
 
   return (
     <div className="App">
+      <Navbar/>
       <Hero />
       <PartnersSlider />
       <Why />

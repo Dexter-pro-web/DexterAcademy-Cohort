@@ -1,3 +1,15 @@
+@keyframes glow {
+  0% {
+    box-shadow: 0 0 10px 0 rgba(246, 187, 97, 0.5);
+  }
+  50% {
+    box-shadow: 0 0 20px 10px rgba(246, 187, 97, 0.8);
+  }
+  100% {
+    box-shadow: 0 0 10px 0 rgba(246, 187, 97, 0.5);
+  }
+}
+
 .testimonials-container {
   padding: 130px 100px;
   background-color: #fffaf0;
@@ -28,6 +40,7 @@
 .card:hover {
   transform: translateY(-5px);
   cursor: pointer;
+  animation: glow 10s ease-in-out infinite;
 }
 
 .card:nth-child(2) {

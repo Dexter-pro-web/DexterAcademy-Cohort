@@ -48,9 +48,28 @@
   content: "●";
   position: absolute;
   left: 0;
-  color: #006d69;
-  font-size: 1.5rem;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #05474D;
+  border-radius: 50%;
+  display: inline-block;
+  background-color: transparent;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
+.benefits-list li::before::after {
+  content: "";
+  width: 10px;
+  height: 10px;
+  background-color: #006d69;
+  border-radius: 50%;
+  display: block;
+}
+
+
 
 .image-container {
   flex: 1;
@@ -123,7 +142,6 @@
   .image-container img {
     height: auto;
     width: 100%;
-    max-width: 100%;
     object-fit: contain;
   }
 

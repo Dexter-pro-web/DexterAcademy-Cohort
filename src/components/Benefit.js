@@ -3,7 +3,7 @@ import "../styles/Benefit.css";
 
 const Benefits = () => {
   return (
-    <div className="benefit-container">
+    <div className="benefit-container" id="benefits">
       <h1 data-aos="fade-up" data-aos-duration="50000">Key Benefits of our Academy</h1>
       <div className="benefits-inner" data-aos="zoom-in" data-aos-duration="50000">
         <div className="benefits-content">

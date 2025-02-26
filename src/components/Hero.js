@@ -1,6 +1,5 @@
 import { useState } from "react";
 import "../styles/Hero.css";
-import Navbar from "../components/Navbar.js";
 
 function Hero() {
   const [isHovered, setIsHovered] = useState(false);

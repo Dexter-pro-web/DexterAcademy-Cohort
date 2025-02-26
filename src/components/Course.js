@@ -5,7 +5,7 @@ import "../styles/Course.css";
 
 function Course() {
   return (
-    <div className="course-container">
+    <div className="course-container" id="courses">
       <h1 className="heading"data-aos="fade-right" data-aos-duration="50000" >Courses & Offerings</h1>
 
       <div className="course-grid" data-aos="zoom-in" data-aos-duration="50000">

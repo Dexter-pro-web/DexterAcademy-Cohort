@@ -1,3 +1,15 @@
+@keyframes glow {
+  0% {
+    box-shadow: 0 0 10px 0 rgba(246, 187, 97, 0.5);
+  }
+  50% {
+    box-shadow: 0 0 20px 10px rgba(246, 187, 97, 0.8);
+  }
+  100% {
+    box-shadow: 0 0 10px 0 rgba(246, 187, 97, 0.5);
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -40,6 +52,12 @@
   min-height: 261px;
   width: 100%;
   max-width: 397px;
+}
+
+.course-card:hover {
+  transform: translateY(-5px);
+  cursor: pointer;
+  animation: glow 10s ease-in-out infinite;
 }
 
 .course-header {

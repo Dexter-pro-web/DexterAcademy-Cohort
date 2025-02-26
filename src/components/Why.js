@@ -52,7 +52,6 @@ const Why = () => {
         className={`request-btn ${isHovered ? "no-arrow" : ""}`}
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
-        data-aos="fade-up" data-aos-duration="50000"
         onClick={scrollToCurriculum}
       >
         Request Full Curriculum {isHovered ? "" : "➜"}

@@ -161,7 +161,7 @@
 
 @media (max-width: 768px) {
   .hero {
-    padding: 50px 40px;
+    padding: 0 40px;
     padding-bottom: 100px;
   }
 
@@ -200,7 +200,7 @@
 
 @media (max-width: 467px) {
   .hero {
-    padding: 50px 20px;
+    padding: 0 20px;
     padding-bottom: 100px;
   }
 }
