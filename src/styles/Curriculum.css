@@ -119,7 +119,7 @@ body {
 @media (max-width: 768px) {
     .curriculum-container {
         padding: 20px;
-        padding-bottom: 50px;
+        padding-bottom: 100px;
     }
 
     .curriculum-inner {
@@ -153,6 +153,7 @@ body {
 @media (max-width: 480px) {
     .curriculum-container {
         padding: 15px;
+        padding-bottom: 100px;
     }
 
     .curriculum-inner {

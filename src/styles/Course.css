@@ -75,6 +75,7 @@
   cursor: pointer;
   transition: background-color 0.3s ease;
   width: 100%;
+  color: #05484E !important;
 }
 
 .course-button:hover {

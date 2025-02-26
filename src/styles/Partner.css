@@ -21,8 +21,8 @@
 }
 
 .partner-logo {
-  width: fit-content;
-  max-width: 238px;
+  width: auto;
+  max-width: 220px;
   height: 50px;
   margin: 0 10px;
   margin-top: 10px;
