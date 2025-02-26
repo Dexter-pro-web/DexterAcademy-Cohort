@@ -16,7 +16,6 @@ export default function Navbar() {
           />
         </div>
         
-        {/* Navbar Links will be hidden on small screens */}
         <div className={`navbar-links ${isMenuOpen ? "active" : ""}`}>
           <a href="#courses" className="nav-link" onClick={() => setIsMenuOpen(false)}>
             Courses
@@ -40,7 +39,6 @@ export default function Navbar() {
           </button>
         </div>
 
-        {/* Navbar toggle icon (shown on small screens) */}
         <div className="navbar-toggle" onClick={() => setIsMenuOpen(!isMenuOpen)}>
           {isMenuOpen ? <FiX size={24} /> : <FiMenu size={24} />}
         </div>
