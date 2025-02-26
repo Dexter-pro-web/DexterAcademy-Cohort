@@ -6,9 +6,9 @@
 }
 
 .course-container {
-  padding: 130px 100px; /* Consistent with previous section */
+  padding: 130px 100px;
   text-align: left;
-  background-color: #FFFAF0;
+  background-color: #fffaf0;
   padding-bottom: 215px;
 }
 
@@ -21,7 +21,7 @@
 
 .course-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 columns for large screens */
+  grid-template-columns: repeat(3, 1fr);
   gap: 24px;
   justify-items: center;
   padding: 0;
@@ -31,7 +31,7 @@
   background-color: white;
   padding: 20px;
   border-radius: 16px;
-  border: 1px solid #F6F2EA;
+  border: 1px solid #f6f2ea;
   text-align: left;
   position: relative;
   display: flex;
@@ -68,30 +68,29 @@
 
 .course-button {
   background-color: #fff;
-  border: 1px solid #EAE4D6;
+  border: 1px solid #eae4d6;
   border-radius: 100px;
   padding: 10px 0;
   font-size: 16px;
   cursor: pointer;
   transition: background-color 0.3s ease;
   width: 100%;
-  color: #05484E !important;
+  color: #05484e !important;
 }
 
 .course-button:hover {
   background-color: #f4dcc2;
 }
 
-/* Responsive Adjustments */
 @media (max-width: 1200px) {
   .course-container {
-    padding: 100px 50px; /* Adjust for medium screens */
+    padding: 100px 50px;
   }
 }
 
 @media (max-width: 992px) {
   .course-container {
-    padding: 80px 40px; /* Consistent with previous container */
+    padding: 80px 40px;
   }
 
   .course-grid {
@@ -99,7 +98,7 @@
   }
 
   .heading {
-    font-size: 36px; /* Slight reduction in font size */
+    font-size: 36px;
   }
 }
 
@@ -109,7 +108,7 @@
   }
 
   .heading {
-    font-size: 32px; /* Further reduce heading size */
+    font-size: 32px;
   }
 
   .course-card {
@@ -123,12 +122,12 @@
   }
 
   .course-grid {
-    grid-template-columns: 1fr; /* 1 column for mobile screens */
+    grid-template-columns: 1fr;
     padding: 0;
   }
-  
+
   .heading {
-    font-size: 28px; /* Further reduction for small screens */
+    font-size: 28px;
     text-align: center;
   }
 
@@ -143,6 +142,6 @@
   }
 
   .course-container {
-    padding: 40px 20px; /* Further padding reduction for small screens */
+    padding: 40px 20px;
   }
 }

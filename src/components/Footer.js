@@ -4,11 +4,13 @@ import "../styles/Footer.css";
 const Footer = () => {
   return (
     <div className="footer-container">
-
       <footer className="footer">
         <div className="footer-content">
           <div className="footer-logo">
-            <img src={`${process.env.PUBLIC_URL}/images/academy-logo.png`} alt="Logo" />
+            <img
+              src={`${process.env.PUBLIC_URL}/images/academy-logo.png`}
+              alt="Logo"
+            />
           </div>
 
           <div className="footer-links">
@@ -36,7 +38,6 @@ const Footer = () => {
                 <li>Stack</li>
               </ul>
             </div>
-            
           </div>
         </div>
 
@@ -44,7 +45,7 @@ const Footer = () => {
           <p>&copy; 2025 Dexter Academy.</p>
           <div className="social-icons">
             <a
-              href="https://x.com"
+              href="https://x.com/dexterproA"
               className="social-icon"
               target="_blank"
               rel="noopener noreferrer"
@@ -52,7 +53,7 @@ const Footer = () => {
               <i className="fab fa-x"></i>
             </a>
             <a
-              href="https://instagram.com/dexterpro_ltd"
+              href="https://www.instagram.com/dexterproa/"
               className="social-icon"
               target="_blank"
               rel="noopener noreferrer"
@@ -60,7 +61,7 @@ const Footer = () => {
               <i className="fab fa-instagram"></i>
             </a>
             <a
-              href="https://linkedin.com/company/dexterpro-technology-limited/"
+              href="https://www.linkedin.com/company/dexacad/"
               className="social-icon"
               target="_blank"
               rel="noopener noreferrer"

@@ -1,6 +1,6 @@
 body {
   font-family: "Onest", serif;
-  background-color: #032C30;
+  background-color: #032c30;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -10,7 +10,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 56px 20px; /* Adjust for mobile */
+  padding: 56px 20px;
   color: white;
   padding-bottom: 56px;
   background-image: url(/public/images/grid-blocks.png);
@@ -92,25 +92,25 @@ h2 {
 }
 
 .features ul li::before {
-  content: '✔';
+  content: "✔";
   text-align: center;
-  color: #12B76A;
+  color: #12b76a;
   margin-right: 12px;
   border-radius: 50%;
   width: 24px;
   height: 24px;
-  background-color: #D1FADF;
+  background-color: #d1fadf;
   padding: 1px;
 }
 
 .group-discount {
-  color: #F1970E;
+  color: #f1970e;
   font-size: 14px;
   margin-top: 24px;
   font-weight: 700;
   text-align: center;
   padding: 9px 4px;
-  border-bottom: 2px solid #F1970E;
+  border-bottom: 2px solid #f1970e;
   width: fit-content;
   margin: 0 auto;
 }
@@ -124,8 +124,8 @@ h2 {
 }
 
 .get-started-btn {
-  background-color: #F6BB61;
-  color: #032C30;
+  background-color: #f6bb61;
+  color: #032c30;
   border: none;
   padding: 12px;
   border-radius: 50px;
@@ -140,35 +140,34 @@ h2 {
   background-color: #ffb955;
 }
 
-
 @media (max-width: 768px) {
   .payment-title {
-    font-size: 40px; /* Increase heading size */
+    font-size: 40px;
     align-self: center;
   }
 }
 
 @media (min-width: 768px) {
   .payment-container {
-    padding: 80px 40px; /* Align with larger screens */
+    padding: 80px 40px;
   }
 
   .payment-cards {
     flex-direction: row;
     justify-content: center;
-    gap: 1.5rem; /* Slight gap adjustment */
+    gap: 1.5rem;
   }
 
   .payment-card {
-    width: 48%; /* Take up less width for better alignment */
+    width: 48%;
   }
 
   .payment-title {
-    font-size: 40px; /* Increase heading size */
+    font-size: 40px;
   }
 
   .features {
-    padding: 28px; /* Slightly larger padding */
+    padding: 28px;
   }
 
   .get-started-btn {
@@ -178,7 +177,7 @@ h2 {
 
 @media (min-width: 1024px) {
   .payment-container {
-    padding: 100px 80px; /* More spacious padding for large screens */
+    padding: 100px 80px;
   }
 
   .payment-cards {
@@ -186,7 +185,7 @@ h2 {
   }
 
   .payment-card {
-    width: 45%; /* Make cards slightly smaller */
+    width: 45%;
   }
 
   .features {
@@ -201,11 +200,11 @@ h2 {
 
 @media (min-width: 1200px) {
   .payment-container {
-    padding: 120px 100px; /* More padding for extra-large screens */
+    padding: 120px 100px;
   }
 
   .payment-title {
-    font-size: 44px; /* Larger title for extra-large screens */
+    font-size: 44px;
   }
 
   .payment-card {
@@ -213,6 +212,6 @@ h2 {
   }
 
   .get-started-btn {
-    height: 50px; /* Slight increase in button height */
+    height: 50px;
   }
 }

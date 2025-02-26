@@ -1,11 +1,11 @@
-import React from 'react';
-import "../styles/Payment.css"
+import React from "react";
+import "../styles/Payment.css";
 
 const PaymentPlans = () => {
   return (
-    <div className="payment-container">
-      <h1 className="payment-title">Payment Plans</h1>
-      <div className="payment-cards">
+    <div className="payment-container" id="payments">
+      <h1 className="payment-title" data-aos="fade-right" data-aos-duration="50000">Payment Plans</h1>
+      <div className="payment-cards" data-aos="zoom-up" data-aos-duration="50000">
         <div className="payment-card">
           <h2>Pay in Full</h2>
           <p className="subtitle">Get 5% discount with a one time payment</p>
@@ -20,7 +20,7 @@ const PaymentPlans = () => {
             </ul>
             <p className="group-discount">GROUP PAYMENT (GET 10% OFF)</p>
           </div>
-          <div className='get-started'>
+          <div className="get-started">
             <button className="get-started-btn">Get started</button>
           </div>
         </div>
@@ -38,7 +38,7 @@ const PaymentPlans = () => {
               <li>The certificate is available after completion</li>
             </ul>
           </div>
-          <div className='get-started'>
+          <div className="get-started">
             <button className="get-started-btn">Get started</button>
           </div>
         </div>

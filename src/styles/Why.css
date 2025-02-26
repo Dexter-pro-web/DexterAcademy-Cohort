@@ -1,15 +1,14 @@
-/* Why Container Styles */
 .why-container {
   text-align: center;
   padding: 130px 100px;
-  background-color: #FFFAF0; /* Light cream background */
+  background-color: #fffaf0;
 }
 
 .why-heading {
   font-size: 14px;
   font-weight: bold;
-  color: #05484E;
-  background-color: #FFEFCC;
+  color: #05484e;
+  background-color: #ffefcc;
   border-radius: 50px;
   padding: 8px 16px;
   width: fit-content;
@@ -22,7 +21,7 @@
   font-size: 40px;
   font-weight: bold;
   line-height: 48px;
-  color: #0A0B12;
+  color: #0a0b12;
   margin: 0 auto;
   margin-bottom: 40px;
   max-width: 926px;
@@ -37,19 +36,16 @@
   margin: 0 auto;
 }
 
-/* First row of 3 cards */
-.why-grid .why-card:nth-child(-n+3) {
-  flex: 1 1 calc(33.33% - 1rem); /* 3 cards in first row */
+.why-grid .why-card:nth-child(-n + 3) {
+  flex: 1 1 calc(33.33% - 1rem);
   box-sizing: border-box;
 }
 
-/* Second row of 2 centered cards */
-.why-grid .why-card:nth-child(n+4) {
-  flex: 1 1 calc(50% - 1rem); /* 2 cards in second row */
+.why-grid .why-card:nth-child(n + 4) {
+  flex: 1 1 calc(50% - 1rem);
   box-sizing: border-box;
 }
 
-/* Card styling */
 .why-card {
   background-color: white;
   border-radius: 10px;
@@ -65,7 +61,6 @@
   cursor: pointer;
 }
 
-/* Aligning icon and title side by side */
 .icon-title-container {
   display: flex;
   flex-direction: column;
@@ -73,7 +68,7 @@
 }
 
 .icon {
-  width: 56px;  /* Adjust the size as necessary */
+  width: 56px;
   height: 56px;
   margin-bottom: 32px;
 }
@@ -81,19 +76,18 @@
 .title {
   font-size: 20px;
   font-weight: 600;
-  color: #0D0D0D;
+  color: #0d0d0d;
   margin-bottom: 12px;
 }
 
 .description {
   font-size: 14px;
   line-height: 21px;
-  color: #85808A;
+  color: #85808a;
 }
 
-/* Button with Arrow */
 .request-btn {
-  background-color: #05484E;
+  background-color: #05484e;
   color: white;
   padding: 13px 17px;
   font-size: 18px;
@@ -129,88 +123,88 @@
 
 @media (max-width: 1200px) {
   .why-container {
-      padding: 100px 50px;
+    padding: 100px 50px;
   }
 
   .why-subheading {
-      font-size: 36px;
-      line-height: 42px;
-      margin-bottom: 30px;
+    font-size: 36px;
+    line-height: 42px;
+    margin-bottom: 30px;
   }
 }
 
 @media (max-width: 992px) {
   .why-container {
-      padding: 80px 40px;
+    padding: 80px 40px;
   }
 
-  .why-grid .why-card:nth-child(-n+3),
-  .why-grid .why-card:nth-child(n+4) {
-      flex: 1 1 calc(50% - 1rem); /* Change to 2 cards per row */
+  .why-grid .why-card:nth-child(-n + 3),
+  .why-grid .why-card:nth-child(n + 4) {
+    flex: 1 1 calc(50% - 1rem);
   }
 
   .why-subheading {
-      font-size: 32px;
-      line-height: 38px;
-      margin-bottom: 25px;
+    font-size: 32px;
+    line-height: 38px;
+    margin-bottom: 25px;
   }
 }
 
 @media (max-width: 768px) {
   .why-container {
-      padding: 60px 30px;
+    padding: 60px 30px;
   }
 
   .why-grid {
-      flex-direction: row;
-      align-items: center;
+    flex-direction: row;
+    align-items: center;
   }
 
   .why-card {
-      width: 100%; /* Each card full width on small screens */
-      padding: 20px;
+    width: 100%;
+    padding: 20px;
   }
 
   .why-subheading {
-      font-size: 28px;
-      line-height: 34px;
+    font-size: 28px;
+    line-height: 34px;
   }
 
   .request-btn {
-      padding: 10px 15px;
-      font-size: 16px;
+    padding: 10px 15px;
+    font-size: 16px;
   }
 }
 
 @media (max-width: 590px) {
   .why-container {
-      padding: 40px 80px;
+    padding: 40px 80px;
   }
 
   .why-grid {
     flex-direction: column;
     align-items: center;
-}
+  }
 
   .why-heading {
-      font-size: 12px;
-      padding: 6px 12px;
+    font-size: 12px;
+    padding: 6px 12px;
   }
 
   .why-subheading {
-      font-size: 24px;
-      line-height: 30px;
-      margin-bottom: 20px;
+    font-size: 24px;
+    line-height: 30px;
+    margin-bottom: 20px;
   }
 
   .request-btn {
-      font-size: 14px;
-      padding: 8px 12px;
+    font-size: 14px;
+    padding: 8px 12px;
   }
 }
 
 @media (max-width: 480px) {
   .why-container {
     padding: 40px 20px;
-}
+  }
 }
