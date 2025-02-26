@@ -1,0 +1,58 @@
+.navbar {
+    background-color: #FFF8E8;
+    padding: 10px 24px;
+    border-radius: 30px;
+    width: 749px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  .navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .navbar-logo img {
+    height: 24px;
+    width: 158px;
+  }
+  
+  .navbar-links {
+    display: flex;
+    gap: 32px;
+  }
+  
+  .nav-link {
+    color: #687171;
+    text-decoration: none;
+    font-weight: normal;
+    transition: color 0.3s ease, font-size 0.3s ease;
+    font-size: 16px;
+  }
+  
+  .nav-link:hover {
+    font-size: 14px;
+  }
+  
+  .navbar-contact .contact-button {
+    background-color: #05484E;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    height: 36px;
+  }
+  
+  .contact-button.no-arrow {
+    padding-right: 16px; /* Ensures no layout shift when arrow is removed */
+  }
+  
+  
+  .contact-button:hover .no-arrow {
+    padding-right: 16px;
+  }
+  

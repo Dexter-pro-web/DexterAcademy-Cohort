@@ -1,0 +1,186 @@
+/* Main Hero Section */
+.hero {
+    background-image: url('/public/images/grid-blocks.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 100px; /* Padding for large screens */
+    padding-top: 28px;
+}
+
+.hero-content {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 80px;
+}
+
+.hero-txt {
+    max-width: 70%; /* Explicitly set width */
+    color: white;
+    flex-grow: 1;
+    flex-basis: 70%; /* Explicitly define flex-basis */
+}
+
+#bootcamp-title {
+    background-color: #065860;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 16px;
+    width: fit-content;
+    padding: 9px 12px;
+    border-radius: 40px;
+    color: white;
+}
+
+.hero-txt h1 {
+    font-size: clamp(2rem, 5vw, 46px); /* Use clamp for responsive scaling */
+    margin-bottom: 16px;
+    max-width: 711px;
+}
+
+.hero-txt p {
+    font-size: clamp(1rem, 2vw, 18px); /* Responsive paragraph font size */
+    margin-bottom: 24px;
+    color: #CACECE;
+    max-width: 681px;
+}
+
+.hero-btns {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 32px;
+    height: 48px;
+}
+
+/* Buttons */
+.apply-btn,
+.curriculum-btn {
+    padding: 12px;
+    font-size: clamp(1rem, 1.5vw, 18px); /* Responsive button font size */
+    border: none;
+    cursor: pointer;
+    border-radius: 100px;
+    transition: background-color 0.3s ease;
+}
+
+.apply-btn {
+    background-color: #F6BB61;
+    color: #032C30;
+    position: relative; 
+    display: inline-flex;
+    align-items: center;
+    transition: background-color 0.3s ease, width 0.3s ease;
+    overflow: hidden;
+    white-space: nowrap;
+    width: auto;
+}
+
+.curriculum-btn {
+    background-color: white;
+    color: #1b3a4b;
+}
+
+.stats p {
+    font-size: clamp(0.9rem, 1.5vw, 18px); /* Responsive scaling */
+    color: #CACECE;
+}
+
+.cohort-date {
+    margin-top: 1rem;
+    max-width: 326px;
+    width: auto;
+}
+
+.cohort-date p {
+    font-size: clamp(1rem, 2vw, 18px); /* Responsive scaling */
+    color: white !important;
+    font-weight: 500;
+    padding: 0;
+    margin: 8px;
+}
+
+#no {
+    font-size: clamp(1.5rem, 2.5vw, 24px); /* Responsive scaling */
+    color: white;
+}
+
+.hero-img {
+    flex-grow: 1;
+    flex-basis: 30%; /* Explicitly define flex-basis */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-img {
+    max-width: 100%;
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Responsive Design */
+
+/* Medium screens (tablets) */
+@media (max-width: 1024px) {
+    .hero {
+        padding: 50px; /* Reduced padding for tablets */
+    }
+
+    .hero-content {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .hero-img {
+        margin-top: 2rem;
+    }
+
+    .hero-txt {
+        max-width: 100%;
+        flex-basis: 100%;
+    }
+
+    .hero-txt h1 {
+        font-size: clamp(2rem, 4vw, 3rem); /* More responsive for tablets */
+    }
+}
+
+/* Small screens (mobile) */
+@media (max-width: 768px) {
+    .hero {
+        padding: 20px; /* Reduced padding for mobile */
+    }
+
+    .hero-content {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .hero-txt h1 {
+        font-size: clamp(1.5rem, 5vw, 2.5rem); /* Responsive for small screens */
+    }
+
+    .hero-txt p {
+        font-size: clamp(1rem, 3vw, 1.2rem); /* Smaller font size for small screens */
+    }
+
+    .hero-btns {
+        flex-direction: column; /* Stack buttons vertically */
+        gap: 12px;
+    }
+
+    .stats p {
+        font-size: clamp(0.8rem, 2vw, 1rem); /* Smaller stats text on mobile */
+    }
+
+    .cohort-date p {
+        font-size: clamp(0.8rem, 2vw, 1rem); /* Smaller cohort date text */
+    }
+
+    .hero-img {
+        margin-top: 2rem;
+    }
+}

@@ -1,0 +1,216 @@
+/* Why Container Styles */
+.why-container {
+  text-align: center;
+  padding: 130px 100px;
+  background-color: #FFFAF0; /* Light cream background */
+}
+
+.why-heading {
+  font-size: 14px;
+  font-weight: bold;
+  color: #05484E;
+  background-color: #FFEFCC;
+  border-radius: 50px;
+  padding: 8px 16px;
+  width: fit-content;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 16px;
+}
+
+.why-subheading {
+  font-size: 40px;
+  font-weight: bold;
+  line-height: 48px;
+  color: #0A0B12;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  max-width: 926px;
+}
+
+.why-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* First row of 3 cards */
+.why-grid .why-card:nth-child(-n+3) {
+  flex: 1 1 calc(33.33% - 1rem); /* 3 cards in first row */
+  box-sizing: border-box;
+}
+
+/* Second row of 2 centered cards */
+.why-grid .why-card:nth-child(n+4) {
+  flex: 1 1 calc(50% - 1rem); /* 2 cards in second row */
+  box-sizing: border-box;
+}
+
+/* Card styling */
+.why-card {
+  background-color: white;
+  border-radius: 10px;
+  padding: 24px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  text-align: left;
+  transition: transform 0.2s;
+}
+
+.why-card:hover {
+  transform: translateY(-5px);
+  cursor: pointer;
+}
+
+/* Aligning icon and title side by side */
+.icon-title-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.icon {
+  width: 56px;  /* Adjust the size as necessary */
+  height: 56px;
+  margin-bottom: 32px;
+}
+
+.title {
+  font-size: 20px;
+  font-weight: 600;
+  color: #0D0D0D;
+  margin-bottom: 12px;
+}
+
+.description {
+  font-size: 14px;
+  line-height: 21px;
+  color: #85808A;
+}
+
+/* Button with Arrow */
+.request-btn {
+  background-color: #05484E;
+  color: white;
+  padding: 13px 17px;
+  font-size: 18px;
+  border: none;
+  border-radius: 100px;
+  cursor: pointer;
+  margin-top: 40px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  height: auto;
+  width: fit-content;
+}
+
+.request-btn .arrow {
+  margin-left: 10px;
+  transition: opacity 0.3s ease;
+  color: white;
+  padding: 13px 17px;
+  font-size: 18px;
+  height: auto;
+  width: fit-content;
+}
+
+.request-btn:hover .arrow {
+  opacity: 0;
+}
+
+.request-btn:hover {
+  background-color: #003e36;
+}
+
+@media (max-width: 1200px) {
+  .why-container {
+      padding: 100px 50px;
+  }
+
+  .why-subheading {
+      font-size: 36px;
+      line-height: 42px;
+      margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 992px) {
+  .why-container {
+      padding: 80px 40px;
+  }
+
+  .why-grid .why-card:nth-child(-n+3),
+  .why-grid .why-card:nth-child(n+4) {
+      flex: 1 1 calc(50% - 1rem); /* Change to 2 cards per row */
+  }
+
+  .why-subheading {
+      font-size: 32px;
+      line-height: 38px;
+      margin-bottom: 25px;
+  }
+}
+
+@media (max-width: 768px) {
+  .why-container {
+      padding: 60px 30px;
+  }
+
+  .why-grid {
+      flex-direction: row;
+      align-items: center;
+  }
+
+  .why-card {
+      width: 100%; /* Each card full width on small screens */
+      padding: 20px;
+  }
+
+  .why-subheading {
+      font-size: 28px;
+      line-height: 34px;
+  }
+
+  .request-btn {
+      padding: 10px 15px;
+      font-size: 16px;
+  }
+}
+
+@media (max-width: 590px) {
+  .why-container {
+      padding: 40px 80px;
+  }
+
+  .why-grid {
+    flex-direction: column;
+    align-items: center;
+}
+
+  .why-heading {
+      font-size: 12px;
+      padding: 6px 12px;
+  }
+
+  .why-subheading {
+      font-size: 24px;
+      line-height: 30px;
+      margin-bottom: 20px;
+  }
+
+  .request-btn {
+      font-size: 14px;
+      padding: 8px 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .why-container {
+    padding: 40px 20px;
+}
+}

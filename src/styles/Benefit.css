@@ -1,0 +1,151 @@
+/* Container and heading styles */
+.benefit-container {
+    padding: 0 120px; /* Adjusted to match the other components */
+    background-color: #FFFAF0;
+    padding-bottom: 122px;
+}
+
+.benefit-container h1 {
+    margin-bottom: 40px;
+    color: #210203;
+    font-size: 40px;
+    font-weight: 700;
+    text-align: center;
+}
+
+/* Benefits inner container - flexbox layout for text and image */
+.benefits-inner {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch; /* Ensures both columns stretch equally */
+    min-height: 400px; /* Optional: Set a minimum height for balance */
+}
+
+/* Content column styling */
+.benefits-content {
+    flex: 1;
+}
+
+.benefits-content p {
+    color: #687171;
+    margin-bottom: 24px;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+/* List styling */
+.benefits-list {
+    list-style: none;
+    padding: 0;
+}
+
+.benefits-list li {
+    font-size: 24px;
+    color: #3a3a3a;
+    margin-bottom: 40px;
+    position: relative;
+    padding-left: 30px;
+}
+
+.benefits-list li::before {
+    content: '●';
+    position: absolute;
+    left: 0;
+    color: #006d69;
+    font-size: 1.5rem;
+}
+
+/* Image container styling */
+.image-container {
+    flex: 1; /* Make it grow/shrink in proportion to the content */
+    padding-left: 2rem;
+    display: flex;
+    align-items: center;
+}
+
+.image-container img {
+    width: 100%; /* Scale the width relative to the container */
+    height: auto; /* Keep the aspect ratio intact */
+    max-width: 100%; /* Ensure the image doesn't exceed the container's width */
+    object-fit: cover; /* Ensure the image scales properly */
+    border-radius: 1rem;
+}
+
+/* Responsive Design: Adjust for smaller screens */
+@media (max-width: 1024px) {
+    /* Adjust padding on tablet */
+    .benefit-container {
+        padding: 50px 60px; /* Matches the previous tablet padding */
+    }
+
+    .benefits-inner {
+        flex-direction: column; /* Stack the image and text vertically */
+    }
+
+    .image-container {
+        padding-left: 0;
+        margin-top: 2rem;
+        height: auto;
+    }
+
+    /* Adjust image scaling to fit content */
+    .image-container img {
+        height: auto; /* Let the image height auto adjust */
+        width: 100%; /* Ensure width is contained */
+        max-width: 100%; /* Make sure the image does not exceed the container width */
+        object-fit: contain; /* Ensure the image is fully visible */
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    .benefits-list li {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+
+    .benefits-content p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 768px) {
+    /* Adjust padding on mobile */
+    .benefit-container {
+        padding: 50px 30px; /* Matches the previous mobile padding */
+    }
+
+    /* Stack content and image */
+    .benefits-inner {
+        flex-direction: column;
+    }
+
+    .image-container {
+        padding-left: 0;
+        margin-top: 2rem;
+        height: auto;
+    }
+
+    /* Adjust image scaling to fit content */
+    .image-container img {
+        height: auto;
+        width: 100%;
+        max-width: 100%; /* Prevent the image from exceeding its container */
+        object-fit: contain; /* Ensure full image visibility */
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .benefits-list li {
+        font-size: 18px;
+        margin-bottom: 16px;
+    }
+
+    .benefits-content p {
+        font-size: 12px;
+    }
+}

@@ -1,0 +1,183 @@
+/* General styles for both desktop and mobile */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Onest", serif;
+}
+
+.curriculum-container {
+    padding: 40px 20px; /* Smaller padding for more space on smaller screens */
+    background-color: #FFFAF0;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 215px;
+}
+
+.curriculum-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 32px;
+    background-color: #032C30;
+    color: #fff;
+    max-width: 1240px;
+    width: 100%;
+    border-radius: 24px;
+    background-image: url(/public/images/grid-blocks.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.content {
+    flex: 60%;
+}
+
+.content h1 {
+    font-size: 48px; /* Reduced font size for better scaling */
+    margin-bottom: 16px;
+}
+
+.content p {
+    font-size: 20px; /* Adjusted to scale well */
+    color: #CACECE;
+}
+
+.form-container {
+    background-color: #fff;
+    padding: 32px 24px;
+    border-radius: 10px;
+    color: #000;
+    flex: 40%;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 0.5rem;
+    color: #687171;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #D0D5DD;
+    border-radius: 100px;
+    font-size: 0.9rem;
+}
+
+.submit-button {
+    background-color: #05484E;
+    color: #fff;
+    border: none;
+    padding: 12px;
+    border-radius: 100px;
+    font-size: 14px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.submit-button:hover {
+    background-color: #003a3a;
+}
+
+/* Responsive styling */
+
+/* Tablet and smaller (below 1024px) */
+@media (max-width: 1024px) {
+    .curriculum-inner {
+        padding: 100px 24px;
+        flex-direction: column; /* Stacks the form below the content */
+    }
+
+    .content {
+        flex: 100%;
+        margin-bottom: 24px;
+        text-align: center; /* Centers the text */
+    }
+
+    .content h1 {
+        font-size: 36px; /* Further reduce the font size */
+    }
+
+    .form-container {
+        flex: 100%;
+        padding: 24px; /* Adjust padding for better fit */
+        width: 50%;
+        margin-top: 50px;
+    }
+}
+
+/* Mobile and smaller (below 768px) */
+@media (max-width: 768px) {
+    .curriculum-container {
+        padding: 20px;
+        padding-bottom: 50px;
+    }
+
+    .curriculum-inner {
+        padding: 100px 24px;
+    }
+
+    .content h1 {
+        font-size: 28px; /* Smaller font size for mobile */
+    }
+
+    .content p {
+        font-size: 16px;
+    }
+
+    .form-container {
+        padding: 16px;
+        width: 80%;
+    }
+
+    .form-group input {
+        padding: 0.7rem;
+    }
+
+    .submit-button {
+        padding: 0.7rem;
+        font-size: 0.9rem;
+    }
+}
+
+/* Very small mobile (below 480px) */
+@media (max-width: 480px) {
+    .curriculum-container {
+        padding: 15px;
+    }
+
+    .curriculum-inner {
+        padding: 100px 24px;
+    }
+
+    .content h1 {
+        font-size: 22px; /* Further reduce font size for very small screens */
+    }
+
+    .content p {
+        font-size: 14px;
+    }
+
+    .form-container {
+        padding: 12px;
+        width: 100%;
+    }
+
+    .form-group input {
+        padding: 0.6rem;
+    }
+
+    .submit-button {
+        padding: 0.6rem;
+        font-size: 0.85rem;
+    }
+}

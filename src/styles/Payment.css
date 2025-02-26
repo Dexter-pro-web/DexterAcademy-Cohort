@@ -1,0 +1,218 @@
+body {
+  font-family: "Onest", serif;
+  background-color: #032C30;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.payment-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 56px 20px; /* Adjust for mobile */
+  color: white;
+  padding-bottom: 56px;
+  background-image: url(/public/images/grid-blocks.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.payment-title {
+  font-size: 36px;
+  color: white;
+  margin-bottom: 40px;
+  margin-top: 32px;
+  align-self: flex-start;
+}
+
+.payment-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  width: 100%;
+  padding: 0;
+}
+
+.payment-card {
+  background-color: #fefbf5;
+  color: #333;
+  border-radius: 16px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 604px;
+  margin: 0 auto;
+  transition: transform 0.2s;
+}
+
+.payment-card:hover {
+  transform: translateY(-5px);
+  cursor: pointer;
+}
+
+h2 {
+  font-size: 24px;
+  margin-bottom: 0;
+  color: #210203;
+  padding: 0 24px;
+  margin-top: 32px;
+}
+
+.subtitle {
+  font-size: 16px;
+  color: #687171;
+  margin-bottom: 24px;
+  margin-top: 4px;
+  padding: 0 24px;
+}
+
+.features {
+  border: 2px solid whitesmoke;
+  padding: 24px;
+}
+
+.features h3 {
+  font-size: 16px;
+  font-weight: 600;
+  margin-top: 0;
+}
+
+.features ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 24px;
+}
+
+.features ul li {
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  color: #687171;
+}
+
+.features ul li::before {
+  content: '✔';
+  text-align: center;
+  color: #12B76A;
+  margin-right: 12px;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  background-color: #D1FADF;
+  padding: 1px;
+}
+
+.group-discount {
+  color: #F1970E;
+  font-size: 14px;
+  margin-top: 24px;
+  font-weight: 700;
+  text-align: center;
+  padding: 9px 4px;
+  border-bottom: 2px solid #F1970E;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.get-started {
+  background-color: white;
+  padding: 32px;
+  margin-bottom: 0;
+  border-bottom-right-radius: 16px;
+  border-bottom-left-radius: 16px;
+}
+
+.get-started-btn {
+  background-color: #F6BB61;
+  color: #032C30;
+  border: none;
+  padding: 12px;
+  border-radius: 50px;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  width: 100%;
+  height: 48px;
+}
+
+.get-started-btn:hover {
+  background-color: #ffb955;
+}
+
+
+@media (max-width: 768px) {
+  .payment-title {
+    font-size: 40px; /* Increase heading size */
+    align-self: center;
+  }
+}
+
+@media (min-width: 768px) {
+  .payment-container {
+    padding: 80px 40px; /* Align with larger screens */
+  }
+
+  .payment-cards {
+    flex-direction: row;
+    justify-content: center;
+    gap: 1.5rem; /* Slight gap adjustment */
+  }
+
+  .payment-card {
+    width: 48%; /* Take up less width for better alignment */
+  }
+
+  .payment-title {
+    font-size: 40px; /* Increase heading size */
+  }
+
+  .features {
+    padding: 28px; /* Slightly larger padding */
+  }
+
+  .get-started-btn {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .payment-container {
+    padding: 100px 80px; /* More spacious padding for large screens */
+  }
+
+  .payment-cards {
+    gap: 2rem;
+  }
+
+  .payment-card {
+    width: 45%; /* Make cards slightly smaller */
+  }
+
+  .features {
+    padding: 32px;
+  }
+
+  .get-started-btn {
+    font-size: 18px;
+    height: 48px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .payment-container {
+    padding: 120px 100px; /* More padding for extra-large screens */
+  }
+
+  .payment-title {
+    font-size: 44px; /* Larger title for extra-large screens */
+  }
+
+  .payment-card {
+    max-width: 604px;
+  }
+
+  .get-started-btn {
+    height: 50px; /* Slight increase in button height */
+  }
+}
