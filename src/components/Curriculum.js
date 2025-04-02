@@ -31,6 +31,18 @@ const Curriculum = () => {
                 required
               />
             </div>
+
+            <div className="form-group">
+            <label htmlFor="course">Course</label>
+              <input
+                type="text"
+                id="course"
+                name="course"
+                placeholder="Course of interest"
+                required
+              />
+            </div>
+
             <div className="form-group">
               <label htmlFor="phone">Phone Number</label>
               <input
